@@ -1,0 +1,69 @@
+<section class="section">
+    <div class="container">
+        <div class="row">
+            
+            {{$author:= "gerard"}}
+            {{ $person_page_path := (printf "/authors/%s" (urlize $author)) }}
+            {{ $person_page := site.GetPage $person_page_path }}
+            
+            {{ $person := $person_page.Params }}
+            {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
+            <div class="col-12 col-lg-3">
+                <div id="profile text-left">
+                    {{ $avatar_image := $avatar.Fill "200x200 Center" }}
+                    <img class="portrait" src="{{ $avatar_image.RelPermalink }}" itemprop="image" alt="{{ $author }}">
+
+                    <div class="portrait-title">
+                      <h2 itemprop="name">{{ $person.name }}</h2>
+                      {{ with $person.role }}<h3 itemprop="jobTitle">{{ . | markdownify | emojify }}</h3>{{ end }}
+                      {{if  $person.courses}}
+                        <ul class="courselist">
+                      {{end}}
+                            {{ range $person.courses }}
+                            <li>
+                            {{ with .course }} {{.}}{{ end }}
+                            <span >{{ .institution }}</span>
+                            <em>{{ .year }}</em>
+                            </li>
+                            {{ end }}
+                            {{if  $person.courses}}
+                            </ul>
+                        {{end}}
+                     
+                    </div>
+              
+                    <link itemprop="url" href="{{ .Permalink }}">
+              
+                    <ul class="network-icon" aria-hidden="true">
+                      {{ range $person.social }}
+                      {{ $pack := or .icon_pack "fas" }}
+                      {{ $pack_prefix := $pack }}
+                      {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+                        {{ $pack_prefix = "fa" }}
+                      {{ end }}
+                      {{ $link := .link }}
+                      {{ $scheme := (urls.Parse $link).Scheme }}
+                      {{ $target := "" }}
+                      {{ if not $scheme }}
+                        {{ $link = .link | relLangURL }}
+                      {{ else if in (slice "http" "https") $scheme }}
+                        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+                      {{ end }}
+                      <li>
+                        <a itemprop="sameAs" href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
+                          <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+                        </a>
+                      </li>
+                      {{ end }}
+                    </ul>
+              
+                  </div>
+            </div>
+            
+            <div class="col-12 col-lg-9">
+                {{ $person_page.Content }}
+            </div>
+        </div>
+    </div>
+
+</section>

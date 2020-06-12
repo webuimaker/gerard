@@ -1,0 +1,63 @@
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Selected Publications</h2>
+
+                {{ range $index, $elem := where site.RegularPages "Section" "publication" }}
+                    <div class="publication-list">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="article-title" itemprop="name">
+                                    <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }} </a>
+                                    <em class="text-muted">{{ .Params.subTitle }}</em>
+                                </h3>
+                            </div>                           
+                        </div>
+                        <div class="row">                            
+                            <div class="col-12 col-lg-8">                                
+                                {{ with .Summary }}
+                                    <div class="article-style mt-3" itemprop="articleBody">
+                                        {{ . | truncate 600 }}
+                                    </div>
+                                {{ end }}
+                                
+                                <div class="btn-links">
+                                    {{range .Params.btn }}                                        
+                                        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="{{.url}}">{{.name}}</a>
+                                    {{end}}
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-lg-4">
+                                <div id="carouselExample{{$index}}" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                    <ol class="carousel-indicators">
+                                        {{range $indexl, $elem := .Params.images }}
+                                            <li data-target="#carouselExample{{$index}}" data-slide-to="{{$indexl}}" class="{{if eq $indexl  0 }} active {{end}}"></li>
+                                        {{end}}
+                                      </ol>
+                                    <div class="carousel-inner">
+                                        {{range $indexl, $elem := .Params.images }}
+                                        <div class="carousel-item {{if eq $indexl  0 }} active {{end}}">
+                                            <img class="d-block w-100" src="{{.path }}" alt="{{.caption}}">
+                                        </div>
+                                        {{end}}
+                                    </div>
+                                    <!-- <a class="carousel-control-prev" href="#carouselExample{{$index}}" role="button" data-slide="prev">
+                                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next text-faded" href="#carouselExample{{$index}}" role="button" data-slide="next">
+                                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

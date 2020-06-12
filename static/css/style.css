@@ -1,0 +1,178 @@
+body{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 17px;
+    color: rgba(0,0,0,.8);
+    line-height: 1.65;
+    background-color: #fff;
+    margin-top: 70px;
+    padding-top: 0;
+    counter-reset: captions;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Hind,sans-serif;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.25;
+    color: #313131;
+    text-rendering: optimizeLegibility;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-light{
+    background: #fff!important;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+    /* min-height: 70px; */
+}
+.nav-item.active a{
+    font-weight: 500;
+}
+
+.section{
+    padding: 50px 0px;
+}
+
+.portrait-title h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #000;
+    margin: 20px 0 10px;
+}
+.portrait-title h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0,0,0,.54);
+    margin: 0 0 10px;
+}
+.courselist li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+.courselist li span, .courselist li em{
+    font-size: 0.9rem;
+    color: rgba(0,0,0,.54);
+}
+
+#profile .network-icon {
+    margin-top: 30px;
+}
+ul.network-icon {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.network-icon li {
+    margin-right: 10px;
+}
+.publication-list{
+    margin-bottom: 30px;
+}
+.publication-list .article-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.publication-list .article-title a{
+    color: #151515;
+    transition: color .6s ease;
+}
+.publication-list .article-title em{
+    font-size: .9rem;
+}
+
+.publication-list .article-title a:hover{
+    color: #2962ff;
+    text-decoration: none;
+    transition: color .6s ease;
+}
+.publication-list .article-style {
+    margin-top: 2px;
+    font-size: .9rem;
+}
+.publication-list  .carousel-indicators{
+    bottom: -30px;
+}
+
+.publication-list .carousel-indicators li {
+    width: 8px;
+   height: 8px;
+   border-radius: 100%;
+   background: #dbdbdb;
+ }
+ .publication-list .carousel-indicators li.active {
+    background: #d32e2e;
+  }
+.btn-links .btn{
+    padding: 5px .4rem;
+    font-size: .7rem;
+    border-radius: .2rem;
+    line-height: 1;
+}
+footer{
+    border-top: 1px solid #c6c6c6;
+    padding-top: 15px;
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .navbar-light{
+        min-height: 70px;
+    }
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
