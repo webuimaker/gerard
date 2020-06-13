@@ -4,14 +4,20 @@
             <div class="col-12">
                 <h2>Selected Publications</h2>
 
-                {{ range $index, $elem := where site.RegularPages "Section" "publication" }}
+                {{ range $index, $elem := where site.RegularPages "Section" "publication" | first 3 }}
                     <div class="publication-list">
                         <div class="row">
                             <div class="col-12">
                                 <h3 class="article-title" itemprop="name">
                                     <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }} </a>
-                                    <em class="text-muted">{{ .Params.subTitle }}</em>
+                                    <span class="text-muted">{{ .Params.subTitle }}</span>
                                 </h3>
+                                
+                                <div class="btn-links">
+                                    {{range .Params.btn }}                                        
+                                        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="{{.url}}">{{.name}}</a>
+                                    {{end}}
+                                </div>
                             </div>                           
                         </div>
                         <div class="row">                            
@@ -22,11 +28,6 @@
                                     </div>
                                 {{ end }}
                                 
-                                <div class="btn-links">
-                                    {{range .Params.btn }}                                        
-                                        <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="{{.url}}">{{.name}}</a>
-                                    {{end}}
-                                </div>
                             </div>
                             
                             <div class="col-12 col-lg-4">

@@ -1,8 +1,8 @@
 body{
     font-family: 'Roboto', sans-serif;    
-    font-size: 17px;
+    font-size: 15px;
     color: rgba(0,0,0,.8);
-    line-height: 1.65;
+    line-height: 1.5;
     background-color: #fff;
     margin-top: 70px;
     padding-top: 0;
@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6 {
     -ms-hyphens: manual;
     hyphens: manual;
 }
+p {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+a.active{ color: #2962ff;}
 ul{
     margin: 0px;
     padding: 0px;
@@ -32,12 +37,23 @@ ul{
     box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
     /* min-height: 70px; */
 }
+.nav-item a{
+    font-size: 17px;
+}
 .nav-item.active a{
     font-weight: 500;
+    color: #2962ff !important;
+}
+.navbar-light .navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .section{
-    padding: 50px 0px;
+    padding: 20px 0px;
+}
+#profile{
+    text-align: center;
 }
 
 .portrait-title h2 {
@@ -65,16 +81,19 @@ ul{
     margin-top: 30px;
 }
 ul.network-icon {
-    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 .network-icon li {
     margin-right: 10px;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0px 10px;
 }
 .publication-list{
     margin-bottom: 30px;
@@ -82,18 +101,19 @@ ul.network-icon {
 .publication-list .article-title {
     font-size: 1.2rem;
     font-weight: 500;
+    margin-bottom: 0px;
 }
 
 .publication-list .article-title a{
     color: #151515;
     transition: color .6s ease;
 }
-.publication-list .article-title em{
+/* .publication-list .article-title em{
     font-size: .9rem;
-}
+} */
 
 .publication-list .article-title a:hover{
-    color: #2962ff;
+    color: #2962ff; 
     text-decoration: none;
     transition: color .6s ease;
 }
@@ -115,14 +135,15 @@ ul.network-icon {
     background: #d32e2e;
   }
 .btn-links .btn{
-    padding: 5px .4rem;
-    font-size: .7rem;
+    padding: 4px .2rem;
+    font-size: .6rem;
     border-radius: .2rem;
     line-height: 1;
 }
 footer{
-    border-top: 1px solid #c6c6c6;
+    /* border-top: 1px solid #c6c6c6; */
     padding-top: 15px;
+    font-size: 0.8rem;
 }
 
 

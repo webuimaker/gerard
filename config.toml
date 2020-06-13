@@ -26,32 +26,32 @@ copyright = "Gerard Torrats-Espinosa. Built with <a href='https://gohugo.io/' ta
   weight = 2
   
 [[menu.main]]
-  name = "RESEARCH"
+  name = "Research"
   url = "/research"
   identifier = "research"
   weight = 3
   
 [[menu.main]]
-  name = "DATA"
+  name = "Data"
   url = "/data"
   identifier = "data"
   weight = 4
 
 [[menu.main]]
-  name = "TEACHING"
+  name = "Teaching"
   url = "/teaching"
   identifier = "teaching"
   weight = 5
 
 [[menu.main]]
-  name = "RESOURCES"
+  name = "Resources"
   url = "/resources"
   identifier = "resources"
   weight = 6
 
   
 [[menu.main]]
-  name = "BLOG"
+  name = "Blog"
   url = "/blog"
   identifier = "blog"
   weight = 7

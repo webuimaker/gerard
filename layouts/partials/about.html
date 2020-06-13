@@ -8,12 +8,12 @@
             
             {{ $person := $person_page.Params }}
             {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
-            <div class="col-12 col-lg-3">
-                <div id="profile text-left">
+            <div class="col-12 col-lg-4">
+                <div id="profile">
                     {{ $avatar_image := $avatar.Fill "200x200 Center" }}
                     <img class="portrait" src="{{ $avatar_image.RelPermalink }}" itemprop="image" alt="{{ $author }}">
 
-                    <div class="portrait-title">
+                    <div class="portrait-title text-left">
                       <h2 itemprop="name">{{ $person.name }}</h2>
                       {{ with $person.role }}<h3 itemprop="jobTitle">{{ . | markdownify | emojify }}</h3>{{ end }}
                       {{if  $person.courses}}
@@ -60,7 +60,7 @@
                   </div>
             </div>
             
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-lg-8">
                 {{ $person_page.Content }}
             </div>
         </div>
