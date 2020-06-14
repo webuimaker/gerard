@@ -10,12 +10,14 @@
                                     <h3 class="article-title" itemprop="name">
                                         <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }} </a>
                                         <span class="text-muted">{{ .Params.subTitle }}</span>
-                                    </h3>                                
-                                    <div class="btn-links">
-                                        {{range .Params.btn }}                                        
-                                            <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="{{.url}}">{{.name}}</a>
-                                        {{end}}
-                                    </div>
+                                    </h3>   
+                                    {{ if .Params.btn }}                             
+                                        <div class="btn-links">
+                                            {{range .Params.btn }}                                        
+                                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="{{.url}}">{{.name}}</a>
+                                            {{end}}
+                                        </div>
+                                    {{ end }}
                                 </div>                           
                             </div>
                             <div class="row">                            
