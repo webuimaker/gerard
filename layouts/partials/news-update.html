@@ -10,13 +10,13 @@
                             <div class="col-12">
                                 <h3 class="article-title" itemprop="name">
                                     <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }} </a>
-                                    {{if .Params.subTitle}} <span class="text-muted">{{ .Params.subTitle }}</span> {{end}}
+                                    {{ if .Params.subTitle }} <span class="text-muted">{{ .Params.subTitle }}</span> {{end}}
                                 </h3>
-                                {{if .Params.btn}}
+                                {{if .Params.btn }}
                                 <div class="btn-links">
                                     {{range .Params.btn }}                                        
                                         <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="{{.url}}">{{.name}}</a>
-                                    {{end}}
+                                    {{ end }}
                                 </div>
                                 {{end}}
                             </div>                           
@@ -25,7 +25,7 @@
                             <div class="col-12">                                
                                 {{ with .Summary }}
                                     <div class="article-style mt-3" itemprop="articleBody">
-                                        {{ . | truncate 600 }}
+                                        {{ . | truncate 300 }}
                                     </div>
                                 {{ end }}
                                 
