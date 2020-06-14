@@ -1,5 +1,5 @@
 ---
-title: "Using a Natural Experiment to Estimate the Electoral Consequences of Terrorist Attacks."
+title: "Crime and Inequality in Academic Achievement Across School Districts in the United States"
 subTitle: " Proceedings of the Natural Academy of Sciences 2018 115(42): 10624-10629 (with Laia Balcells)"
 
 # Summary. An optional shortened abstract.
