@@ -15,7 +15,7 @@ btn:
 images:
 - path: "images/linear_mixed_multilevel_model.svg"
   caption: "alt text"
-- path: "images/kaplan_meier_estimator_survival_analysis-2.svg"
+- path: "images/general_linear_model_ordinary_least_square"
   caption: "alt text"
 ---
 
