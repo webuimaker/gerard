@@ -1,5 +1,5 @@
 ---
-title: "Using a Natural Experiment to Estimate the Electoral Consequences of Terrorist Attacks."
+title: "Other Publications2 - Using a Natural Experiment to Estimate the Electoral Consequences of Terrorist Attacks."
 subTitle: " Proceedings of the Natural Academy of Sciences 2018 115(42): 10624-10629 (with Laia Balcells)"
 
 # Summary. An optional shortened abstract.
@@ -18,7 +18,7 @@ images:
 - path: "images/kaplan_meier_estimator_survival_analysis-2.svg"
   caption: "alt text"
 
-catType: "Working Papers"
+catType: "Other Publications"
 ---
 
 # Tables

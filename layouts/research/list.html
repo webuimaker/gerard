@@ -1,11 +1,57 @@
 {{ define "main" }}    
 <section class="section">
-    <div class="container">        
+    <div class="container"> 
         <div class="row">
             <div class="col-12">
+                <h1>{{ .Title }}</h1>      
+            </div>
+        </div> 
+        <div class="row">
+            {{if .Params.sidebar}}
+                <div class="col-3">
+                    <ul class="list-unstyled">
+                        {{range .Site.Data.researchCat}}
+                            <li class=" mb-2"><a href="#{{ replaceRE "(\\s)" "" . | lower }}">{{.}}</a></li>
+                        {{end}}
+                    
+                    </ul>
+                </div>
+            {{end}}
+                
+            <div class="{{if .Params.sidebar}} col-9 {{else}} col-12 {{end}}">
+                {{$listpage := where site.RegularPages "Section" "research"}}
+                <ul class="catlist">                    
+                    {{range .Site.Data.researchCat}}
+                        {{$curType := . }}
+                        <li id="{{ replaceRE "(\\s)" "" . | lower }}"><strong>{{$curType }}</strong></li>
+                        <ul>
+                            {{ range ( $listpage.ByParam "catType") }}
+                                {{if eq .Params.catType $curType}}
+                                    <li>
+                                        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                                        <p class="text-muted">{{.Params.subTitle}}</p>                                        
+                                        {{if .Params.btn }}
+                                        <div class="btn-links">
+                                            {{range .Params.btn }}                                        
+                                               [<a class="btn  my-0 mr-1 " href="{{.url}}">{{.name}}</a>] 
+                                            {{ end }}
+                                        </div>
+                                        {{end}}
+                                    </li>
+                                {{end}}
+                            {{end}}
+                        </ul>
+                        
+
+                    {{end}}
+                </ul>
+                
+
                 {{ .Content  | safeHTML }}
                 
             </div>
+
+
         </div>
     </div>
 </section>

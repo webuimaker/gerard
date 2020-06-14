@@ -2,6 +2,5 @@
 title: "Research"
 subTitle: "Demo"
 id: "research"
+sidebar: true
 ---
-
-# Page coming Soon!
