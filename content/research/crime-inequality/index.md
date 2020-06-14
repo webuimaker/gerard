@@ -1,5 +1,5 @@
 ---
-title: "Crime and Inequality in Academic Achievement Across School Districts in the United States."
+title: "Crime and Inequality in Academic Achievement Across School Districts in the United Statate"
 subTitle: " Proceedings of the Natural Academy of Sciences 2018 115(42): 10624-10629 (with Laia Balcells)"
 
 # Summary. An optional shortened abstract.
