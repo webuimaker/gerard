@@ -13,12 +13,13 @@
                     {{ $avatar_image := $avatar.Fill "200x200 Center" }}
                     <img class="portrait" src="{{ $avatar_image.RelPermalink }}" itemprop="image" alt="{{ $author }}">
 
-                    <div class="portrait-title text-left">
+                    <div class="portrait-title text-center">
                       <h2 itemprop="name">{{ $person.name }}</h2>
-                      {{ with $person.role }}<h3 itemprop="jobTitle">{{ . | markdownify | emojify }}</h3>{{ end }}
+                      {{ with $person.role }}<h3 itemprop="jobTitle">{{ . | safeHTML | emojify }}</h3>{{ end }}
+
                       {{if  $person.courses}}
                         <ul class="courselist">
-                      {{end}}
+                     
                             {{ range $person.courses }}
                             <li>
                             {{ with .course }} {{.}}{{ end }}
@@ -26,7 +27,7 @@
                             <em>{{ .year }}</em>
                             </li>
                             {{ end }}
-                            {{if  $person.courses}}
+                            
                             </ul>
                         {{end}}
                      

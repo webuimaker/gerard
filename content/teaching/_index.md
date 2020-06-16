@@ -1,7 +1,6 @@
 ---
-title: "teaching"
+title: "Teaching"
 subTitle: " Demo"
 id: "teaching"
+sidebar: 
 ---
-
-# Page coming Soon!

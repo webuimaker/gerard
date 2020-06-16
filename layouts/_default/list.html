@@ -1,16 +1,62 @@
 {{ define "main" }}    
 <section class="section single-page">
-    <div class="container">   
+    <div class="container"> 
         <div class="row">
-            <div class="col-12">
-                <h2>{{ .Title }}</h2>      
-            </div>
-        </div>       
-        <div class="row">
-            <div class="col-12">
+            {{ $data := index .Site.Data .Params.id }}
+            {{ $dataTitle :=  .Params.id }}
+            {{if .Params.sidebar}}
+                <div class="col-3">
+                    <h2 class="mt-0">{{ .Title }}</h2>
+                    
+                   
+                    <ul class="list-unstyled">
+                        {{ range $index, $element := $data}}                       
+                            <li class=" mb-2"><a href="#{{ replaceRE "(\\s)" "" . | lower }}">{{.}}</a></li>
+                        {{end}}
+                    
+                    </ul>
+                </div>
+            {{end}}
+
+             
+            <div class="{{if .Params.sidebar}} col-9 {{else}} col-12 {{end}}">                
+                {{$listpage := where site.RegularPages "Section" $dataTitle}}
+                <p>{{.Params.subtitle}}</p>
+
+                {{if .Params.sidebar}}
+                    <ul class="catlist">                    
+                        {{range $data }}
+                            {{$curType := . }}
+                            <li id="{{ replaceRE "(\\s)" "" . | lower }}"><strong>{{$curType }}</strong></li>
+                            <ul>
+                                {{ range ( $listpage.ByParam "catType") }}
+                                    {{if eq .Params.catType $curType}}
+                                        <li>
+                                            <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                                            <p class="text-muted">{{.Params.subTitle}}</p>                                        
+                                            {{if .Params.btn }}
+                                            <div class="btn-links">
+                                                {{range .Params.btn }}                                        
+                                                <a class="btn btn-outline-primary btn-sm my-0 mr-1 " href="{{.url}}">{{.name}}</a>
+                                                {{ end }}
+                                            </div>
+                                            {{end}}
+                                        </li>
+                                    {{end}}
+                                {{end}}
+                            </ul>
+                            
+
+                        {{end}}
+                    </ul>
+                {{else}}               
+
                 {{ .Content  | safeHTML }}
+
+                {{end}}
                 
             </div>
+
         </div>
     </div>
 </section>

@@ -149,13 +149,18 @@ footer{
 .catlist {
     margin: 0px;
     padding: 0px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .catlist li{
+    list-style: none;
+}
+.catlist li strong{
     /* margin-bottom: 1rem; */
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .catlist ul{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-bottom: 20px;
 }
 .catlist p{
@@ -185,9 +190,9 @@ footer{
     font-size: .9rem;
     font-weight: 500;
 }
-.single-page ul{
+/* .single-page ul{
     margin-left: 20px;
-}
+} */
 .single-page ul li{
     margin-bottom: 0.5rem;
 }
