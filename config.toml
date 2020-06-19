@@ -10,6 +10,18 @@ googleAnalytics = ""
 openGraph = true
 copyright = "Gerard Torrats-Espinosa. Built with <a href='https://gohugo.io/' target='_blank'>Hugo</a>"
 
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "monokai" # manni
+    tabWidth = 4
+
 
 [menu]
 

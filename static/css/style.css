@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Catamaran', sans-serif; 
     font-size: 15px;
     color: rgba(0,0,0,.8);
     line-height: 1.5;
@@ -9,7 +9,7 @@ body{
     counter-reset: captions;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Hind,sans-serif;
+    font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     margin-top: 1rem;
     margin-bottom: .5rem;
@@ -94,6 +94,9 @@ ul.network-icon {
     font-size: 2rem;
     display: inline-block;
     margin: 0px 10px;
+}
+.network-icon li img{
+    width: 60%;
 }
 .publication-list{
     margin-bottom: 30px;
@@ -195,6 +198,20 @@ footer{
 } */
 .single-page ul li{
     margin-bottom: 0.5rem;
+}
+
+.aside.black .list-unstyled li a, .aside.black #TableOfContents ul li a{
+    color: #000;
+}
+.aside.black .list-unstyled li a:hover, .aside.black #TableOfContents ul li a:hover{
+    color:#2962ff ;
+}
+.aside.black #TableOfContents ul{
+    padding-left: 0;
+    list-style: none;
+}
+.aside.black #TableOfContents ul ul{
+    padding-left: 15px;
 }
 
 /*

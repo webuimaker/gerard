@@ -10,12 +10,19 @@ courses:
 social:
 - icon: twitter
   icon_pack: fa
-  link: #
+  image: /images/twitter_logo.png 
+  link: "twitter"
 - icon: google
   icon_pack: fa
+  image: /images/google-scholar.png 
   link: #
 - icon: github
   icon_pack: fa
+  image: /images/github_logo.png 
+  link: #
+- icon: envelope
+  icon_pack: fa
+  image: /images/gmail_logo.png 
   link: #
 ---
 
