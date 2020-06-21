@@ -10,6 +10,10 @@ googleAnalytics = ""
 openGraph = true
 copyright = "Gerard Torrats-Espinosa. Built with <a href='https://gohugo.io/' target='_blank'>Hugo</a>"
 
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
 [markup]
   [markup.highlight]
     codeFences = true

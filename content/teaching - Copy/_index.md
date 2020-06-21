@@ -1,7 +1,6 @@
 ---
-title: "Media"
+title: "Teaching"
 subTitle: " Demo"
-id: "media"
+id: "teaching"
 sidebar: true
 ---
-
