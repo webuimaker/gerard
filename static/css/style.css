@@ -200,10 +200,10 @@ footer{
     margin-bottom: 0.5rem;
 }
 
-.aside.black .list-unstyled li a, .aside.black #TableOfContents ul li a{
+.aside.black .list-unstyled li a, .aside.black #TableOfContents ul li a, .black  li a{
     color: #000;
 }
-.aside.black .list-unstyled li a:hover, .aside.black #TableOfContents ul li a:hover{
+.aside.black .list-unstyled li a:hover, .aside.black #TableOfContents ul li a:hover, .black  li a:hover{
     color:#2962ff ;
 }
 .aside.black #TableOfContents ul{
@@ -212,6 +212,50 @@ footer{
 }
 .aside.black #TableOfContents ul ul{
     padding-left: 15px;
+}
+.post-list li strong{
+    font-weight: 600;
+}
+.post-list li a{
+    color: #000000;
+}
+
+.post-list li a:hover{
+    color:#2962ff ;
+    text-decoration: none;
+}
+
+.badge-light {
+    border: none;
+    color: rgba(0,0,0,.68);
+    background: rgba(0,0,0,.05);
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.author-card .portrait {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.author-card .card-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: rgba(0,0,0,.84);
+}
+.author-card .card-title a {
+    color: rgba(0,0,0,.84);
+}
+.author-card .card-subtitle {
+    font-weight: 300;
+    font-size: .9rem;
+    color: rgba(0,0,0,.54);
+    margin-bottom: 7px;
 }
 
 /*

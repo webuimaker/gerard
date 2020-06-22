@@ -1,0 +1,31 @@
+{{ "<!-- blog -->" | safeHTML }}
+
+            <div class="{{if .Params.sidebar}} col-xs-12 col-sm-12 col-md-9 {{else}}  col-12 {{end}}">
+                <div class="row">
+                    
+                    {{ "<!-- blog-item -->" | safeHTML }}
+                    <ul class="catlist post-list">                    
+                        {{ range .Data.Pages }}                            
+                            <li>                                
+                                <div class="p-3">
+                                    <a href="{{ .Permalink }}" ><strong>{{ .Title }}</strong></a>
+                                    <p>{{.Summary | truncate 200}}</p>
+                                    <p> <span class="text-muted">By</span> {{ .Params.Author }}
+                                    <span class="text-muted"> Last Updated on</span> {{ .PublishDate.Format "Monday, Jan 2, 2006" }}  <span class="text-muted"> Categories:</span>
+                                        {{- range $name, $items := .Params.categories }}
+                                        {{ if $name }}, {{ end }}
+                                            <a href="{{ "categories/" | relLangURL }}{{ $items | urlize | lower }}" class="">{{ $items | title | humanize }}</a> 
+                                        {{end}}
+                                    </p>
+                                </div>
+
+                            </li>
+                        {{end}}
+                    </ul>
+
+
+
+                </div>
+            </div>
+            
+{{ "<!-- /blog -->" | safeHTML }}
