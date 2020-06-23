@@ -1,10 +1,13 @@
-<div class="col-3 aside black d-none d-md-block">
-    {{ $data := index .Site.Data .Params.id }}
-    <h2 class="mt-0">{{ .Title }}</h2>
-    <ul class="list-unstyled">
-        {{ range $index, $element := $data}}
-            <li class=" mb-2"><a href="#{{ replaceRE "(\\s)" "" . | lower }}">{{.}}</a></li>
-        {{end}}
+<div class="col-3 aside black d-none d-md-block" id="sidebar">
+    <div class="posfixed">
+        {{ $data := index .Site.Data .Params.id }}
+        <h2 class="mt-0">{{ .Title }}</h2>
+        <ul class="list-unstyled">
+            {{ range $index, $element := $data}}
+                <li class=" mb-2"><a href="#{{ replaceRE "(\\s)" "" . | lower }}">{{.}}</a></li>
+            {{end}}
+        
+        </ul>
+    </div>
     
-    </ul>
 </div>

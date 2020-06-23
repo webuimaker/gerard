@@ -8,7 +8,10 @@ description = "Department of Sociology and Data Science Institute at Columbia Un
 googleAnalytics = ""
 # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
 openGraph = true
-copyright = "Gerard Torrats-Espinosa. Built with <a href='https://gohugo.io/' target='_blank'>Hugo</a>"
+copyright = "© Gerard Torrats-Espinosa (built with <a href='https://gohugo.io/' target='_blank'>Hugo</a>)"
+
+pygmentsCodefences = true 
+pygmentsStyle = "manni"
 
 [blackfriday]
   plainIDAnchors = true
