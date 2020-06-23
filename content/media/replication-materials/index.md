@@ -10,9 +10,7 @@ summary: This study investigates the effect of violent crime on school districtâ
 
 btn:
 - url : "#"
-  name: Doc
-- url : "#"
-  name: pdf
+  name: 
 
 # Project  image 
 images:

@@ -10,10 +10,8 @@ summary: Intro Statistical Methods (Fall 2017)
 
 btn:
 - url : "#"
-  name: Doc
-- url : "#"
-  name: pdf
-
+  name: 
+  
 catType: "New York University"
 ---
 

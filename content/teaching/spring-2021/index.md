@@ -10,9 +10,7 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 btn:
 - url : "#"
-  name: Doc
-- url : "#"
-  name: pdf
+  name: 
 
 catType: "Statistics"
 ---

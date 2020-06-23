@@ -4,7 +4,10 @@
         <div class="row">
             {{if .Params.sidebar }}
                 <div class="col-3 aside black d-none d-md-block">
-                    {{ .TableOfContents }}
+                    <div class="posfixed">
+                        {{ .TableOfContents }}
+                    </div>
+                    
                 </div>
             {{end}}
 

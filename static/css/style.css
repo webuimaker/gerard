@@ -263,6 +263,9 @@ footer{
     color: rgba(0,0,0,.54);
     margin-bottom: 7px;
 }
+.highlight pre{
+    padding: 5px;
+}
 
 /*
 ####################################################
