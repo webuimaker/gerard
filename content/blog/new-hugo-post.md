@@ -2,6 +2,7 @@
 title: "New Hugo Post"
 date: 2018-09-23T11:35:34+06:00
 description : "This is meta description"
+id: blog
 author: Gerard
 authorImage: "images/gerard.jpg"
 authorUrl: "https://gerardtorratsespinosa.com/"
