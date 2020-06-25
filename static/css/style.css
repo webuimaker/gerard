@@ -197,6 +197,9 @@ footer{
     font-size: .9rem;
     font-weight: 500;
 }
+.single-content ul li{
+    margin-left: 1rem;
+}
 /* .single-page ul{
     margin-left: 20px;
 } */

@@ -3,9 +3,12 @@
     <div class="container">
         <div class="row">               
             <div class="col-3 aside black d-none d-md-block">
-                {{ .TableOfContents }}
+                <div class="posfixed">
+                    {{ .TableOfContents }}
+                </div>
+                
             </div>
-            <div class=" col-9  mb-2">
+            <div class="col-md-9 col-xs-12  mb-2">
                 <div class="bg-white">
                     {{ if .Params.image }}
                         <img class="img-fluid w-100 rounded-top mb-3" src="{{ .Params.image | absURL }}" alt="blog-image">
