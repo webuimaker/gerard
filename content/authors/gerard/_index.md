@@ -3,8 +3,8 @@ bio: My research interests include distributed robotics, mobile computing and pr
 email: ""
 name: Gerard Torrats-Espinosa
 role: "Assistant Professor of Sociology <br> Columbia University"
-cvDownload: "/cv"
-cvDownloadText: "Download my CV"
+cvDownloadUrl: "/cv"
+cvDownloadText: "Download My CV"
 courses:
 - course:
   institution: 
