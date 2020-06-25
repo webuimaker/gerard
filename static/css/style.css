@@ -39,7 +39,7 @@ ul{
 }
 .nav-item a{
     font-size: 17px;
-    font-weight: 600;
+    font-weight: bold;
 }
 .nav-item.active a{
     font-weight: 500;
@@ -95,9 +95,10 @@ ul.network-icon {
     display: inline-block;
     margin: 0px;
     padding: 0px;
+    width: 40px;
 }
 .network-icon li img{
-    width: 45%;
+    max-width: 32px;
 }
 .publication-list{
     margin-bottom: 30px;
@@ -141,7 +142,7 @@ ul.network-icon {
 .btn-links .btn{
     padding: 3px .3rem;
     font-size: .6rem;
-    border-radius: 0px;
+    border-radius: 4px;
     line-height: 1;
     margin: 0px !important;
 }
