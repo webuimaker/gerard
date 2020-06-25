@@ -5,7 +5,7 @@ description : "This is meta description"
 author: Gerard
 authorImage: "images/gerard.jpg"
 authorUrl: "https://gerardtorratsespinosa.com/"
-authorPost: PhD Candidate
+authorPost: Assistant Professor of Sociology
 type: post
 image: 
 categories: 

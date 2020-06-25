@@ -42,7 +42,6 @@ ul{
     font-weight: bold;
 }
 .nav-item.active a{
-    font-weight: 500;
     color: #2962ff !important;
 }
 .navbar-light .navbar-brand{

@@ -4,19 +4,19 @@
         <div class="row">               
             <div class="col-3 aside black d-none d-md-block">
                 <div class="posfixed">
-                    {{ .TableOfContents }}
+                    {{ .TableOfContents | truncate 65 }}
                 </div>
                 
             </div>
-            <div class="col-md-9 col-xs-12  mb-2">
+            <div class="col-md-9 col-xs-12 single-content  mb-2">
                 <div class="bg-white">
                     {{ if .Params.image }}
                         <img class="img-fluid w-100 rounded-top mb-3" src="{{ .Params.image | absURL }}" alt="blog-image">
                     {{end}}
                         <div class="pb-4">
                             <h3 class="mt-0">{{ .Title }}</h3>
-                            <ul class="list-inline d-block pb-4 border-bottom mb-3">
-                                <li class="list-inline-item text-color">Posted By {{ .Params.Author }}</li>
+                            <ul class="list-inline d-block pb-2 mb-1">
+                                <li class="list-inline-item text-color ml-0">Posted By {{ .Params.Author }}</li>
                                 <li class="list-inline-item text-color">Last Updated On {{ .PublishDate.Format "02 Jan" }}</li>
                                 <li class="list-inline-item text-color"><i class="fa fa-folder"></i>
                                     {{ range .Params.categories }}
@@ -46,7 +46,7 @@
 
                     
 
-                    <div class="py-4 border-bottom mb-100">
+                    <div class="py-4 mb-100">
                         <div class="row">
                             <div class="col-lg-5 mb-4 mb-lg-0">
                                 <div class="media author-card" itemscope="" itemtype="http://schema.org/Person">
