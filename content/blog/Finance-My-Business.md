@@ -5,7 +5,7 @@ date: 2018-09-24T11:10:07+06:00
 description : "This is meta description"
 author: John Lincon
 type: post
-image: images/blog/blog-5.jpg
+image: images/blog/blog-5.png
 categories: 
   - "Profit & Growth"
 tags:

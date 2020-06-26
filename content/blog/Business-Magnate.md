@@ -5,7 +5,7 @@ date: 2018-09-24T11:07:10+06:00
 description : "This is meta description"
 author: John Lincon
 type: post
-image: images/blog/blog-3.jpg
+image: images/blog/blog-3.png
 categories: 
   - "Company News"
   - "Demo News"

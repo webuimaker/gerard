@@ -1,9 +1,9 @@
 {{ "<!-- Sidebar -->" | safeHTML }}
 <div class="col-md-3  d-none d-md-block">
-    <div class="bg-white px-4 py-100 posfixed">
+    <div class="bg-white  py-100 posfixed">
         {{ "<!-- categories -->" | safeHTML }}
         <div class="mb-50">
-            <h4 class="mb-3">Filter by category</h4>
+            <h2 class="mb-3 mt-0">Categories</h2>
             {{- if isset .Site.Taxonomies "categories" }}
             {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
             <ul class="list-unstyled mb-0 black">

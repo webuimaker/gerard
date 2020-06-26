@@ -3,14 +3,15 @@ title: "New Hugo Post"
 date: 2018-09-23T11:35:34+06:00
 description : "This is meta description"
 id: blog
-author: Gerard
+author: Gerard Torrats-Espinosa
 authorImage: "images/gerard.jpg"
 authorUrl: "https://gerardtorratsespinosa.com/"
 authorPost: Assistant Professor of Sociology
 type: post
-image: 
+image: images/blog/hashtag_beach.jpg
 categories: 
   - "Investment"
+  - "consultancy"
 tags:
   - "Business"
   - "Marketing"

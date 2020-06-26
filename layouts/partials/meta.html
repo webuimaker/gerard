@@ -18,5 +18,8 @@
   ga('send', 'pageview');
 </script>
 <script async src="//www.google-analytics.com/analytics.js"></script>
+{{ "<!--Favicon-->" | safeHTML }}
+<link rel="shortcut icon" href="{{ "/images/favicon.ico" | absURL }} " type="image/x-icon">
+<link rel="icon" href="{{ "/images/favicon.ico" | absURL }} " type="image/x-icon">
 
 <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>

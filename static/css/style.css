@@ -136,10 +136,10 @@ ul.network-icon {
    background: #dbdbdb;
  }
  .publication-list .carousel-indicators li.active {
-    background: #d32e2e;
+    background: #000000;
   }
 .btn-links .btn{
-    padding: 3px .3rem;
+    padding: 2px;
     font-size: .6rem;
     border-radius: 4px;
     line-height: 1;
@@ -196,6 +196,14 @@ footer{
     font-size: .9rem;
     font-weight: 500;
 }
+.single-content ul {
+    padding-left: 30px;
+}
+
+.single-content .blog-head  {
+    padding-left: 0px;
+}
+
 .single-content ul li{
     margin-left: 1rem;
 }
