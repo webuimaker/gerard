@@ -1,8 +1,7 @@
 {{ "<!-- blog -->" | safeHTML }}
 
             <div class="mt-0 {{if .Params.sidebar}} col-xs-12 col-sm-12 col-md-9 {{else}}  col-12 {{end}}">
-                <div class="row">
-                    
+                
                     {{ "<!-- blog-item -->" | safeHTML }}
                     <ul class="catlist post-list">                    
                         {{ range .Data.Pages }}                            
@@ -10,7 +9,7 @@
                                 <div class="pt-0 pb-3">
                                     <a href="{{ .Permalink }}" ><strong>{{ .Title }}</strong></a>
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-10">
                                             <p>{{.Summary | truncate 200}}</p>
                                             <p> <span class="text-muted">By</span> {{ .Params.Author }}
                                                 <span class="text-muted"> Last Updated on</span> {{ .PublishDate.Format "Monday, Jan 2, 2006" }}  <span class="text-muted"> Categories:</span>
@@ -20,7 +19,7 @@
                                                     {{end}}
                                                 </p>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-2">
                                             <img src="{{ .Params.image | absURL }}" alt="{{.Params.image }}" class="img-fluid">
                                         </div>
                                     </div>
@@ -34,7 +33,6 @@
 
 
 
-                </div>
             </div>
             
 {{ "<!-- /blog -->" | safeHTML }}
