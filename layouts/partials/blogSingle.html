@@ -23,6 +23,28 @@
                                     <a class="text-color badge badge-light" href="{{ "categories/" | absURL }}{{ . | lower }}">{{ . }}</a>
                                     {{ end }}
                                 </li>
+
+                                <li  class="list-inline-item" >
+                                    <a class="twitter"
+                                       href="https://twitter.com/intent/tweet?text={{ .Title | html }}&amp;url={{ .Permalink | html }}"
+                                       target="_blank" rel="noopener">
+                                      <img src="{{ "/images/twitter-share-button.png" | absURL }}" alt="twitter">
+                                    </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a class="linkedin"
+                                       href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | html }}&amp;title={{ .Title | html }}"
+                                       target="_blank" rel="noopener">
+                                       <img src="{{ "/images/linkedin-share-button.png" | absURL }}" alt="linkedin">
+                                       
+                                    </a>
+                                  </li>
+                                  <li class="list-inline-item">
+                                    <a class="email"
+                                       href="mailto:?subject={{ .Title | html }}&amp;body={{ .Permalink | html }}">
+                                       <img src="{{ "/images/email-share-button.png" | absURL }}" alt="linkedin">
+                                    </a>
+                                  </li>
                             </ul>
                             <div class="post-content">
                                 {{ .Content }}
@@ -55,11 +77,12 @@
                                         <h5 class="card-title" itemprop="name">
                                             <a href="{{.Params.authorUrl}}">{{.Params.author}}</a></h5>
                                             <h6 class="card-subtitle">{{.Params.authorPost}}</h6><ul class="network-icon" aria-hidden="true"></ul></div></div>
-
+                                        
 
                                 {{ "<!-- share-icon -->" | safeHTML }}
-                                <!-- <div class="d-flex">
+                                 <!-- <div class="d-flex">
                                     <span class="font-weight-light mt-2 mr-3">Share:</span>
+                                    
                                     <ul class="list-inline d-inline-block">
                                         {{ range .Site.Params.sharePost }}
                                         <li class="list-inline-item">
@@ -69,7 +92,7 @@
                                         </li>
                                         {{ end }}
                                     </ul>
-                                </div> -->
+                                </div>  -->
                             </div>
                             {{ "<!-- tags -->" | safeHTML }}
                             </div>

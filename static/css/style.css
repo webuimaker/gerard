@@ -45,8 +45,8 @@ ul{
     color: #2962ff !important;
 }
 .navbar-light .navbar-brand{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .section{
@@ -201,6 +201,14 @@ footer{
     padding-left: 0px;
 }
 
+.single-content .blog-head li img{
+    max-width: 36px;
+
+}
+.single-content .blog-head li {
+    margin: 0.2rem;
+}
+
 .single-content ul li{
     margin-left: 1rem;
 }
@@ -278,7 +286,16 @@ footer{
 .highlight pre{
     padding: 5px;
 }
-
+.share-box .share{
+    padding: 0px;
+}
+.share-box .share li{
+    list-style: none;
+    display: inline-block;
+}
+.share-box .share li img{
+    max-width: 42px;
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S

@@ -89,6 +89,9 @@ mobile = "1234565523"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 
+share = true
+
+
 
 [params.font]
   name = "Poppins"
