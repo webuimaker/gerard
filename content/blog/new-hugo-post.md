@@ -6,7 +6,7 @@ id: blog
 author: Gerard Torrats-Espinosa
 authorImage: "images/gerard.jpg"
 authorUrl: "https://gerardtorratsespinosa.com/"
-authorPost: Assistant Professor of Sociology
+authorPost: "Assistant Professor of Sociology <br> Columbia University"
 type: post
 image: images/blog/hashtag_beach.jpg
 categories: 
@@ -24,6 +24,34 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ## blockquote
 
 >Excepteur sint occaecat cupidatat non proident sunt culpa officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis.
+
+## Tweets
+
+{{< tweet 877500564405444608 >}}
+
+`{{/< tweet 877500564405444608 >/}}`
+
+
+## figure with Caption
+
+{{< figure src="/images/blog/blog-5.png" title="Image caption is here pelase check" >}}
+
+`{{\< figure src="/images/blog/blog-5.png" title="Image caption is here pelase check" >\}}`
+
+
+## YouTube Video
+
+{{< youtube w7Ft2ymGmfc >}}
+`{{\< youtube w7Ft2ymGmfc >\}}`
+
+
+## Vimeo Video
+
+{{< vimeo id="146022717" class="my-vimeo-wrapper-class" title="My vimeo video" >}}
+
+`{{\< vimeo id="146022717" class="my-vimeo-wrapper-class" title="My vimeo video" >\}}`
+
+
 
 ## lists
 

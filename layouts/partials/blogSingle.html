@@ -7,45 +7,49 @@
                 </div>
                 
             </div>
-            <div class="col-md-9 col-xs-12 single-content  mb-2">
+            <div class="col-md-6 col-xs-12 single-content  mb-2">
                 <div class="bg-white">
                     {{ if .Params.image }}
                         <img class="img-fluid w-100 rounded-top mb-3" src="{{ .Params.image | absURL }}" alt="blog-image">
                     {{end}}
                         <div class="pb-4">
                             <h1 class="title-page mt-0">{{ .Title }}</h3>
-                            <ul class="list-inline d-block pb-2 mb-1 blog-head">
-                                <li class="list-inline-item text-color ml-0">Posted By {{ .Params.Author }}</li>
-                                <li class="list-inline-item text-color">Last Updated On {{ .PublishDate.Format "Jan 02, 2006" }}</li>
-
-                                <li class="list-inline-item text-color"><i class="fa fa-folder"></i>
-                                    {{ range .Params.categories }}
-                                    <a class="text-color badge badge-light" href="{{ "categories/" | absURL }}{{ . | lower }}">{{ . }}</a>
-                                    {{ end }}
-                                </li>
-
-                                <li  class="list-inline-item" >
-                                    <a class="twitter"
-                                       href="https://twitter.com/intent/tweet?text={{ .Title | html }}&amp;url={{ .Permalink | html }}"
-                                       target="_blank" rel="noopener">
-                                      <img src="{{ "/images/twitter-share-button.png" | absURL }}" alt="twitter">
-                                    </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                    <a class="linkedin"
-                                       href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | html }}&amp;title={{ .Title | html }}"
-                                       target="_blank" rel="noopener">
-                                       <img src="{{ "/images/linkedin-share-button.png" | absURL }}" alt="linkedin">
-                                       
-                                    </a>
-                                  </li>
-                                  <li class="list-inline-item">
-                                    <a class="email"
-                                       href="mailto:?subject={{ .Title | html }}&amp;body={{ .Permalink | html }}">
-                                       <img src="{{ "/images/email-share-button.png" | absURL }}" alt="linkedin">
-                                    </a>
-                                  </li>
-                            </ul>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="list-inline  blog-head">
+                                            <li class="text-color ml-0 p-0">By {{ .Params.Author }}</li>
+                                            <li class="text-color ml-0 p-0">Updated {{ .PublishDate.Format "Jan 02, 2006" }}</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="col-6">
+                                        <ul class="list-inline  social blog-head text-right">
+                                            <li  class="list-inline-item" >
+                                                <a class="twitter"
+                                                   href="https://twitter.com/intent/tweet?text={{ .Title | html }}&amp;url={{ .Permalink | html }}"
+                                                   target="_blank" rel="noopener">
+                                                  <img src="{{ "/images/twitter-share-button.png" | absURL }}" alt="twitter">
+                                                </a>
+                                              </li>
+                                              <li class="list-inline-item">
+                                                <a class="linkedin"
+                                                   href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | html }}&amp;title={{ .Title | html }}"
+                                                   target="_blank" rel="noopener">
+                                                   <img src="{{ "/images/linkedin-share-button.png" | absURL }}" alt="linkedin">
+                                                   
+                                                </a>
+                                              </li>
+                                              <li class="list-inline-item">
+                                                <a class="email"
+                                                   href="mailto:?subject={{ .Title | html }}&amp;body={{ .Permalink | html }}">
+                                                   <img src="{{ "/images/email-share-button.png" | absURL }}" alt="linkedin">
+                                                </a>
+                                              </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                            
                             <div class="post-content">
                                 {{ .Content }}
                             </div>
@@ -55,6 +59,14 @@
                     <div class="py-4 border-bottom mb-100">
                         <div class="row">
                             <div class="col">
+                                <ul class="list-inline d-block  m-0 p-0 blog-head">
+                                    <li class="list-inline-item text-color"><i class="fa fa-folder"></i>
+                                        {{ range .Params.categories }}
+                                        <a class="text-color badge badge-light mb-0" href="{{ "categories/" | absURL }}{{ . | lower }}">{{ . }}</a>
+                                        {{ end }}
+                                    </li>
+                                </ul>
+
                                 <div class="list-inline-item text-color article-tags">
                                     {{ range .Params.Tags }}
                                     <a class="text-color badge badge-light" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
@@ -70,13 +82,15 @@
 
                     <div class="py-4 mb-100">
                         <div class="row">
-                            <div class="col-lg-5 mb-4 mb-lg-0">
+                            <div class="col-12 mb-4 mb-lg-0">
                                 <div class="media author-card" itemscope="" itemtype="http://schema.org/Person">
                                     <img class="portrait mr-3 w-30" src="{{.Params.authorImage | absURL}}" itemprop="image" alt="{{.Params.author}}">
                                     <div class="media-body">
                                         <h5 class="card-title" itemprop="name">
                                             <a href="{{.Params.authorUrl}}">{{.Params.author}}</a></h5>
-                                            <h6 class="card-subtitle">{{.Params.authorPost}}</h6><ul class="network-icon" aria-hidden="true"></ul></div></div>
+                                            <h6 class="card-subtitle">{{.Params.authorPost | safeHTML }}</h6>
+                                            <p>Twitter: <a href="https://twitter.com/gerardtorrats" target="_blank">@gerardtorrats</a> </p>
+                                            <ul class="network-icon" aria-hidden="true"></ul></div></div>
                                         
 
                                 {{ "<!-- share-icon -->" | safeHTML }}

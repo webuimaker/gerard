@@ -7,10 +7,8 @@
                         <div class="publication-list">
                             <div class="row">
                                 <div class="col-12">
-                                    <p class="article-title1" itemprop="name">
-                                        <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }} </a>
-                                        <span class="text-muted">{{ .Params.subTitle }}</span>
-                                    </p>   
+                                    <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }} </a>
+                                    <p class="text-muted mb-0">{{ .Params.subTitle }}</p>
                                     {{ if .Params.btn }}                             
                                         <div class="btn-links">
                                             {{range .Params.btn }}                                        
