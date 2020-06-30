@@ -1,3 +1,7 @@
+html{
+    
+    scroll-padding-top: 80px;
+}
 body{
     font-family: 'Catamaran', sans-serif; 
     font-size: 15px;
@@ -7,6 +11,7 @@ body{
     margin-top: 70px;
     padding-top: 0;
     counter-reset: captions;
+    scroll-padding-top: 80px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Catamaran', sans-serif;
@@ -51,8 +56,13 @@ ul{
 .navbar-nav li:last-child{
     position: relative;
     font-family: 'Special Elite', cursive;
+    font-weight: bolder;
 }
-.navbar-nav li:last-child a:before{
+.navbar-nav li:last-child a{
+   
+    font-weight: 900;
+}
+/* .navbar-nav li:last-child a:before{
     content: "";
     position: absolute;
     left: 0px;
@@ -60,7 +70,7 @@ ul{
     height: 22px;
     background: rgba(0,0,0,.5);
     margin: auto 0px;
-}
+} */
 
 .section{
     padding: 20px 0px;
@@ -212,6 +222,7 @@ footer{
 
 .single-content .blog-head  {
     padding-left: 0px;
+    margin-bottom: 15px;
 }
 
 .single-content .blog-head li img{
@@ -222,6 +233,10 @@ footer{
     margin: 0;
     font-size: 13px;
 }
+.single-content .blog-head li.categories{
+    font-size: 15px;
+
+} 
 .single-content .social.blog-head li{
     margin: 0px -2px !important
 }
@@ -236,15 +251,16 @@ footer{
     font-size: 17px;
 }
 .post-content figure {    
-    border: 1px solid #ddd;
-    padding: 5px;
+    /* border: 1px solid #ddd; */
+    /* padding: 5px; */
 }
 .post-content figure img {
     max-width: 100%;
 }
 .post-content figure figcaption{
-    background: #f5f5f5;
-    padding: 5px;
+    /* background: #f5f5f5;
+    padding: 5px; */
+    padding: 5px 0px;
 }
 .post-content figure figcaption h4{
     font-size: 13px;

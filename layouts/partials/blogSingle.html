@@ -60,7 +60,7 @@
                         <div class="row">
                             <div class="col">
                                 <ul class="list-inline d-block  m-0 p-0 blog-head">
-                                    <li class="list-inline-item text-color"><i class="fa fa-folder"></i>
+                                    <li class="list-inline-item text-color categories"><i class="fa fa-folder"></i>
                                         {{ range .Params.categories }}
                                         <a class="text-color badge badge-light mb-0" href="{{ "categories/" | absURL }}{{ . | lower }}">{{ . }}</a>
                                         {{ end }}
@@ -86,10 +86,10 @@
                                 <div class="media author-card" itemscope="" itemtype="http://schema.org/Person">
                                     <img class="portrait mr-3 w-30" src="{{.Params.authorImage | absURL}}" itemprop="image" alt="{{.Params.author}}">
                                     <div class="media-body">
-                                        <h5 class="card-title" itemprop="name">
+                                        <h5 class="card-title mb-1" itemprop="name">
                                             <a href="{{.Params.authorUrl}}">{{.Params.author}}</a></h5>
-                                            <h6 class="card-subtitle">{{.Params.authorPost | safeHTML }}</h6>
-                                            <p>Twitter: <a href="https://twitter.com/gerardtorrats" target="_blank">@gerardtorrats</a> </p>
+                                            <h6 class="card-subtitle mb-0">{{.Params.authorPost | safeHTML }}</h6>
+                                            <p class="mt-0"><span class="card-subtitle">Twitter</span> <a href="https://twitter.com/gerardtorrats" target="_blank">@gerardtorrats</a> </p>
                                             <ul class="network-icon" aria-hidden="true"></ul></div></div>
                                         
 
