@@ -300,6 +300,10 @@ footer{
 .aside.black #TableOfContents ul ul{
     padding-left: 0px;
 }
+
+.aside.black #TableOfContents ul ul ul,.aside.black #TableOfContents ul ul ul ul {
+    padding-left: 15px;
+}
 .posfixed {
     position: fixed;
 }
