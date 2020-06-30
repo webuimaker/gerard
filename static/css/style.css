@@ -298,7 +298,7 @@ footer{
     list-style: none;
 }
 .aside.black #TableOfContents ul ul{
-    padding-left: 15px;
+    padding-left: 0px;
 }
 .posfixed {
     position: fixed;
