@@ -20,6 +20,11 @@ images:
   caption: "alt text"
 
 
+# Area
+area: 
+  - Methods
+
+
 catType: "Book Chapters"
 ---
 

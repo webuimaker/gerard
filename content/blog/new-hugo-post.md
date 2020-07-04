@@ -27,27 +27,27 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ## Tweets
 
-{{< tweet 877500564405444608 >}}
+{{< tweet 877500564405444608 >}}  
 
 `{{/< tweet 877500564405444608 >/}}`
 
 
 ## figure with Caption
 
-{{< figure src="/images/blog/blog-5.png" title="Image caption is here pelase check" >}}
+{{< figure src="/images/blog/blog-5.png" title="Image caption is here pelase check" >}} 
 
 `{{\< figure src="/images/blog/blog-5.png" title="Image caption is here pelase check" >\}}`
 
 
 ## YouTube Video
 
-{{< youtube w7Ft2ymGmfc >}}
+{{< youtube w7Ft2ymGmfc >}}     
 `{{\< youtube w7Ft2ymGmfc >\}}`
 
 
 ## Vimeo Video
 
-{{< vimeo id="146022717" class="my-vimeo-wrapper-class" title="My vimeo video" >}}
+{{< vimeo id="146022717" class="my-vimeo-wrapper-class" title="My vimeo video" >}}  
 
 `{{\< vimeo id="146022717" class="my-vimeo-wrapper-class" title="My vimeo video" >\}}`
 

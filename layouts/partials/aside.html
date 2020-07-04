@@ -8,6 +8,30 @@
             {{end}}
         
         </ul>
+
+        {{if eq .URL "/research/"}}
+        <h2 class="mt-3">Filter By Area</h2>
+
+        {{- if isset .Site.Taxonomies "area" }}
+            {{- if not (eq (len .Site.Taxonomies.area) 0) }}
+            <ul class="list-unstyled mb-0 black">
+                {{- range $name, $items := .Site.Taxonomies.area }}
+                <li class=" mb-2">
+                    <a href="{{ "area/" | relLangURL }}{{ $name | urlize | lower }}" class="d-block text-color py-10">{{ $name | title | humanize }}</a>
+                </li>
+                {{- end }}
+            </ul>
+            {{- end }}
+            {{- end }}
+        
+        <!-- {{if .Params.area }}
+        <div class="btn-links">
+            {{range .Params.area }}                                        
+               <a class="btn btn-outline-primary btn-sm my-0 mr-1 " href="{{.}}">{{.}}</a>
+            {{ end }}
+        </div>
+        {{end}} -->
+        {{end}}
     </div>
     
 </div>

@@ -19,7 +19,11 @@
                             {{ range ( $listpage.ByParam "catType") }}
                                 {{if eq .Params.catType $curType}}
                                     <li>
-                                        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                                        {{if or (eq .Params.linkType "external") (eq .Params.linkType "internal") }}
+                                            <a href="{{ .Params.Permalinks }}" target="_blank">{{.Title}}</a>
+                                        {{else}}
+                                            <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                                        {{end}}
                                         <p class="text-muted">{{.Params.subTitle}}</p>                                        
                                         {{if .Params.btn }}
                                         <div class="btn-links">
@@ -28,6 +32,8 @@
                                             {{ end }}
                                         </div>
                                         {{end}}
+
+                                       
                                     </li>
                                 {{end}}
                             {{end}}

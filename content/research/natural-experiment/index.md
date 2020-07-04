@@ -18,6 +18,13 @@ images:
 - path: "images/kaplan_meier_estimator_survival_analysis-2.svg"
   caption: "alt text"
 
+
+# Area
+area: 
+  - Methods
+  - Inequality
+  - Experiments
+
 catType: "Working Papers"
 ---
 

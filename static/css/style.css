@@ -1,6 +1,6 @@
 html{
     
-    scroll-padding-top: 80px;
+    scroll-padding-top: 80px !important;
 }
 body{
     font-family: 'Catamaran', sans-serif; 
@@ -8,10 +8,10 @@ body{
     color: rgba(0,0,0,.8);
     line-height: 1.5;
     background-color: #fff;
-    margin-top: 70px;
+    margin-top: 70px !important;
     padding-top: 0;
     counter-reset: captions;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 80px !important;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Catamaran', sans-serif;
@@ -41,6 +41,7 @@ ul{
     background: #fff!important;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
     /* min-height: 70px; */
+    position: fixed !important;
 }
 .nav-item a{
     font-size: 17px;
@@ -168,7 +169,7 @@ ul.network-icon {
 footer{
     /* border-top: 1px solid #c6c6c6; */
     padding-top: 15px;
-    font-size: 0.8rem;
+    font-size: 12px;
 }
 
 .catlist {
@@ -367,6 +368,9 @@ footer{
 }
 .share-box .share li img{
     max-width: 42px;
+}
+.tocify-extend-page{
+    display: none;
 }
 /*
 ####################################################

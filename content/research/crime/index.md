@@ -19,6 +19,11 @@ images:
 - path: "images/general_linear_model_ordinary_least_square.svg"
   caption: "alt text"
 
+# Area
+area: 
+  - Methods
+  - Inequality
+  - Experiments
 
 catType: "Journal Articles"
 ---

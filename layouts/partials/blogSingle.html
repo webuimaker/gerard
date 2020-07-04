@@ -59,13 +59,13 @@
                     <div class="py-4 border-bottom mb-100">
                         <div class="row">
                             <div class="col">
-                                <ul class="list-inline d-block  m-0 p-0 blog-head">
+                                <!-- <ul class="list-inline d-block  m-0 p-0 blog-head">
                                     <li class="list-inline-item text-color categories"><i class="fa fa-folder"></i>
                                         {{ range .Params.categories }}
                                         <a class="text-color badge badge-light mb-0" href="{{ "categories/" | absURL }}{{ . | lower }}">{{ . }}</a>
                                         {{ end }}
                                     </li>
-                                </ul>
+                                </ul> -->
 
                                 <div class="list-inline-item text-color article-tags">
                                     {{ range .Params.Tags }}
@@ -89,7 +89,7 @@
                                         <h5 class="card-title mb-1" itemprop="name">
                                             <a href="{{.Params.authorUrl}}">{{.Params.author}}</a></h5>
                                             <h6 class="card-subtitle mb-0">{{.Params.authorPost | safeHTML }}</h6>
-                                            <p class="mt-0"><span class="card-subtitle">Twitter</span> <a href="https://twitter.com/gerardtorrats" target="_blank">@gerardtorrats</a> </p>
+                                            <p class="" style="margin-top: -2px;"><span class="card-subtitle">Twitter: </span> <a href="https://twitter.com/gerardtorrats" target="_blank">@gerardtorrats</a> </p>
                                             <ul class="network-icon" aria-hidden="true"></ul></div></div>
                                         
 
