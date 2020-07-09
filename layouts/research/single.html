@@ -10,8 +10,19 @@
             </div>
 
             <div class="col-9 mb-2">
-                <h1 class="title-page">{{ .Title }}</h1>      
-                <span class="text-muted">{{.Date.Format "01, January, 2006 "}} </span>
+                <h1 class="title-page">{{ .Title }}</h1> 
+                {{if  .Params.btn    }}
+                    <div class="btn-links lg">
+                        {{range .Params.btn }}  
+                            {{ if .name }}                                      
+                                <a class="btn btn-outline-primary btn-sm my-0 mr-1 " href="{{.url}}">{{.name}}</a>
+                            {{end}}
+                        {{ end }}
+                    </div>
+                {{end}}
+                {{if .Date}}     
+                    <span class="text-muted">{{.Date.Format "01, January, 2006 "}} </span>
+                {{end}}
 
                 {{ .Content  | safeHTML }}
             </div>

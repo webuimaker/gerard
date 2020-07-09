@@ -1,6 +1,7 @@
 ---
 title: "Open -PDF - Other Publications2 - Using a Natural Experiment to Estimate the Electoral Consequences of Terrorist Attacks."
 subTitle: " Proceedings of the Natural Academy of Sciences 2018 115(42): 10624-10629 (with Laia Balcells)"
+id: research
 linkType: "internal"
 permalinks: "/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf"
 

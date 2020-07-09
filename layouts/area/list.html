@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+
 {{ " <!-- page title -->" | safeHTML }}
 <section class="section ">
   <div class="container">
@@ -13,22 +14,21 @@
       
       <div class="col-md-9 col-xs-12">
         {{ "<!-- blog-item -->" | safeHTML }}
-                    <ul class="catlist post-list">                    
+                    <ul class="catlist ">                    
                         {{ range .Data.Pages }}                            
-                            <li>                                
-                                <div class="pt-0 pb-3">
-                                    <a href="{{ .Permalink }}" ><strong style="font-weight: 500;">{{ .Title }}</strong></a>
-                                    <div class="row">
+                            <li>     
+                                    <a href="{{ .Permalink }}" >{{ .Title }}</a>
+                                    <div class="row d-none">
                                         <div class="col-md-9">
 
-                                            <p>{{.Summary | truncate 380}}</p>
+                                            <!-- <p>{{.Summary | truncate 380}}</p> -->
                                             <p>
                                             <!-- <p> <span class="text-muted">By</span> {{ .Params.Author }} -->
-                                                <span class="text-muted"> Updated</span> {{ .PublishDate.Format "Sep 2, 2006" }} 
-                                                {{- range $name, $items := .Params.area }}
+                                                <!-- <span class="text-muted"> Updated</span> {{ .PublishDate.Format "Sep 2, 2006" }}  -->
+                                                <!-- {{- range $name, $items := .Params.area }}
                                                 {{ if $name }}, {{ end }}
                                                     <a href="{{ "area/" | relLangURL }}{{ $items | urlize | lower }}" class="">{{ $items | title | humanize }}</a> 
-                                                {{end}}
+                                                {{end}} -->
                                             </p>
                                         </div>
                                         <div class="col-md-3">
@@ -37,7 +37,6 @@
                                     </div>
                                     
                                     
-                                </div>
 
                             </li>
                         {{end}}

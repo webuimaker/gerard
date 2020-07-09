@@ -1,6 +1,7 @@
 ---
 title: "External - Like Google.com -  Other Publications - Using a Natural Experiment to Estimate the Electoral Consequences of Terrorist Attacks. "
 subTitle: " Proceedings of the Natural Academy of Sciences 2018 115(42): 10624-10629 (with Laia Balcells)"
+id: research
 permalinks: "https://www.google.com/"
 linkType: "external"
 

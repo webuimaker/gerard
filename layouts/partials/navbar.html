@@ -37,7 +37,7 @@
           </div>
       </li>
       {{ else }}
-      <li class="nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if  (eq .Identifier $currentId)   }} active {{ else if and (or  (eq  $currentPage.Section "tags")  (eq  $currentPage.Section "categories") )   (eq .Name "Blog" ) }}  active  {{ end }}">
+      <li class="nav-item {{if and (eq  $currentPage.Section "area") (eq .Name "Research")  }} active {{end}}   {{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if  (eq .Identifier $currentId)   }} active {{ else if and (or  (eq  $currentPage.Section "tags")  (eq  $currentPage.Section "categories") )   (eq .Name "Blog" ) }}  active  {{ end }}">
         
           <a class="nav-link" href="{{ .URL }}">{{ .Name }} </a>
       </li>
@@ -46,8 +46,6 @@
 
 
       </ul>
-
-
     </div><!-- /.navbar-collapse -->
 
     </div>

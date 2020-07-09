@@ -1,6 +1,6 @@
 ---
-title: "Book Chapters - Crime and Inequality in Academic Achievement Across School Districts in the United States"
-subTitle: "Demography 2020 57: 123–145"
+title: "Demo Publication without button etc"
+subTitle: ""
 date: 2020-05-27
 id: research
 
@@ -8,27 +8,29 @@ id: research
 summary: This study investigates the effect of violent crime on school district–level achievement in English language arts (ELA) and mathematics. The research design exploits variation in achievement and violent crime across 813 school districts in the United States and seven birth cohorts of children born between 1996 and 2002. The identification strategy leverages exogenous shocks to crime rates arising from the availability of federal funds to hire police officers in the local police departments where the school districts operate. Results show that children who entered the school system when the violent crime rate in their school districts was lower score higher in ELA by the end of eighth grade, relative to children attending schools in the same district but who entered the school system when the violent crime rate was higher. A 10% decline in the violent crime rate experienced at ages 0–6 raises eighth-grade ELA achievement in the district by 0.03 standard deviations. Models that estimate effects by race and gender show larger impacts among Black children and boys. 
 
 btn:
-- url : "#"
-  name: Doc
-- url : "#"
-  name: pdf
+- url : 
+  name: 
 
 # Project  image 
 images:
 - path: "images/linear_mixed_multilevel_model.svg"
   caption: "alt text"
-- path: "images/general_linear_model_ordinary_least_square.svg"
+- path: "images/kaplan_meier_estimator_survival_analysis-2.svg"
   caption: "alt text"
 
 
 # Area
 area: 
   - Methods
+  - Inequality
+  - Experiments
 
-
-catType: "Book Chapters"
+catType: "Working Papers"
 ---
 
+# PDF attached
+
+{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="pdf dddd" >}}
 
 
 # Tables

@@ -18,11 +18,8 @@
                                                     {{ if $name }}, {{ end }}
                                                         <a href="{{ "categories/" | relLangURL }}{{ $items | urlize | lower }}" class="">{{ $items | title | humanize }}</a> 
                                                     {{end}} -->
-                                                    <span class="text-muted"> Tags:</span>
-                                                    {{- range $name, $items := .Params.tags }}
-                                                    {{ if $name }}, {{ end }}
-                                                        <a href="{{ "tags/" | relLangURL }}{{ $items | urlize | lower }}" class="">{{ $items | title | humanize }}</a> 
-                                                    {{end}}
+                                                    <span class="text-muted">Tags: </span>
+                                                    {{- range $name, $items := .Params.tags }}{{if $name }}, {{ end }}<a href="{{ "tags/" | relLangURL }}{{ $items | urlize | lower }}" class="">{{$items|title| humanize}}</a>{{end}}
                                                 
                                         </div>
                                         <div class="{{if .Params.image }} col-md-3 {{else}} d-none {{end}}">
