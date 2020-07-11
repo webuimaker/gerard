@@ -25,15 +25,9 @@
                                             <a href="{{ .RelPermalink }}">{{.Title}}</a>
                                         {{end}}
                                         <p class="text-muted">{{.Params.subTitle}}</p>                                        
-                                        {{if  .Params.btn    }}
-                                            <div class="btn-links">
-                                                {{range .Params.btn }}  
-                                                    {{ if .name }}                                      
-                                                        <a class="btn btn-outline-primary btn-sm my-0 mr-1 " href="{{.url}}">{{.name}}</a>
-                                                    {{end}}
-                                                {{ end }}
-                                            </div>
-                                        {{end}}
+                                      
+
+                                        {{ partial "smbtn.html" . }}
 
                                        
                                     </li>

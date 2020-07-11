@@ -9,13 +9,7 @@
                                 <div class="col-12">
                                     <a href="{{ .RelPermalink }}" itemprop="url">{{ .Title }} </a>
                                     <p class="text-muted mb-0">{{ .Params.subTitle }}</p>
-                                    {{ if .Params.btn }}                             
-                                        <div class="btn-links">
-                                            {{range .Params.btn }}                                        
-                                                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="{{.url}}">{{.name}}</a>
-                                            {{end}}
-                                        </div>
-                                    {{ end }}
+                                    {{ partial "smbtn.html" . }}
                                 </div>                           
                             </div>
                             <div class="row">                            

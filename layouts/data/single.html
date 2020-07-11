@@ -22,7 +22,13 @@
 
             
             <div class="{{if .Params.sidebar}} col-9 {{else}} col-12 {{end}} mb-2">
-                {{ .Content  | safeHTML }}
+                {{if  .Params.pageType}}
+                    <div class="row">
+                        {{ .Content  | safeHTML }}
+                    </div>
+                {{else}}
+                    {{ .Content  | safeHTML }}
+                {{end}}
             </div>
         </div>  
     </div>

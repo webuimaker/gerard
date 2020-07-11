@@ -53,6 +53,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 
 
+{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="pdf title" >}}
+{{< pdfedit src="/plotly.html" title="Html" >}}
+
 ## lists
 
 1. Business Services

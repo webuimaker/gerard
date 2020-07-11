@@ -18,18 +18,19 @@
                         {{ range .Data.Pages }}                            
                             <li>     
                                     <a href="{{ .Permalink }}" >{{ .Title }}</a>
-                                    <div class="row d-none">
+                                    <div class="row">
                                         <div class="col-md-9">
 
                                             <!-- <p>{{.Summary | truncate 380}}</p> -->
                                             <p>
-                                            <!-- <p> <span class="text-muted">By</span> {{ .Params.Author }} -->
-                                                <!-- <span class="text-muted"> Updated</span> {{ .PublishDate.Format "Sep 2, 2006" }}  -->
-                                                <!-- {{- range $name, $items := .Params.area }}
+                                            <p> <span class="text-muted">By</span> {{ .Params.Author }}
+                                                <span class="text-muted"> Updated</span> {{ .PublishDate.Format "Sep 2, 2006" }} 
+                                                {{- range $name, $items := .Params.area }}
                                                 {{ if $name }}, {{ end }}
                                                     <a href="{{ "area/" | relLangURL }}{{ $items | urlize | lower }}" class="">{{ $items | title | humanize }}</a> 
-                                                {{end}} -->
+                                                {{end}}
                                             </p>
+                                            {{ partial "smbtn.html" . }}
                                         </div>
                                         <div class="col-md-3">
                                             <img src="{{ .Params.image | absURL }}" alt="{{.Params.image }}" class="img-fluid">

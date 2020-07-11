@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light fixed-top navbar-expand-lg" id="navbar-main">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg {{if .Params.pageType }} rtype{{end}}" id="navbar-main">
     <div class="container">        
     <!-- Brand and toggle get grouped for better mobile display -->
       <a class="navbar-brand" href="{{ "/" | relLangURL }}">
@@ -17,8 +17,8 @@
         
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav ml-auto">
+    <div class="collapse navbar-collapse " id="navbar">
+      <ul class="nav navbar-nav ml-auto navbar-pos">
         {{ $currentPage := . }}
 
         {{ $currentId := .Params.id }}

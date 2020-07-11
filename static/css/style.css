@@ -40,8 +40,17 @@ ul{
     padding: 0px;
 }
 .navbar-collapse.collapse {
-    display: flex !important;
+    /* display: flex !important; */
     padding: 0px !important;
+}
+
+
+.navbar-collapse{
+    padding-left: 0px !important;        
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+
 }
 .navbar-light{
     background: #fff!important;
@@ -59,6 +68,10 @@ ul{
 .navbar-light .navbar-brand{
     font-size: 1.4rem;
     font-weight: bold;
+    height: auto !important; 
+    padding: .3125rem 0px !important;
+    margin-left: 0px !important;
+    line-height: inherit !important; 
 }
 .navbar-nav li:last-child{
     position: relative;
@@ -78,6 +91,10 @@ ul{
     background: rgba(0,0,0,.5);
     margin: auto 0px;
 } */
+
+.navbar-nav.navbar-pos{
+    float: right;
+}
 
 .section{
     padding: 20px 0px;
@@ -150,7 +167,7 @@ ul.network-icon {
 }
 .publication-list .article-style {
     margin-top: 2px;
-    font-size: .9rem;
+    /* font-size: .9rem; */
 }
 .publication-list  .carousel-indicators{
     bottom: -30px;
@@ -177,7 +194,7 @@ ul.network-icon {
     margin-bottom: 6px;
 }
 .btn-links.lg .btn{
-    padding: 4px;
+    /* padding: 4px; */
     font-size: .9rem;
 
 }
@@ -416,24 +433,69 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         border-top: 1px solid #ccc;
         margin-top: 10px;
     } 
+    
+    .navbar-nav.navbar-pos{
+        float: left;
+    }
+
+    
+    .navbar.rtype::before, .navbar.rtype:before, .navbar.rtype .container::before, .navbar.rtype .container::after{
+        display: none;
+    }
+    .pdfedit{
+        height: 250px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    .about-content{
+    /* .about-content{
         padding-top: 10px;
         border-top: 1px solid #ccc;
         margin-top: 10px;
-    } 
+    }  */
+    
+    .navbar-nav.navbar-pos{
+        float: left;
+    }
+
+
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
     
     .fixed-top .navbar-collapse.collapse {
-        display: flex !important;
+        /* display: flex !important; */
+    }
+    .navbar-nav.navbar-pos{
+        float: right;
+    }
+    
+    
+}
+@media (max-width: 768px) { 
+    .navbar.rtype .navbar-collapse.collapse:not(.in){
+        display: none!important;
+    }
+    .navbar.rtype .container {
+        max-width: 720px;
+    }
+    .navbar.rtype::before, .navbar.rtype:before, .navbar.rtype .container::before, .navbar.rtype .container::after{
+        display: none;
+    }
+    .navbar-collapse{
+        padding-left: 0px !important;        
+        padding-right: 0px !important;
+
+    }
+    
+    .navbar-nav.navbar-pos{
+        float: left;
     }
 }
+
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -442,8 +504,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-    .navbar-light{
-        min-height: 70px;
+    .navbar.navbar-light{
+        min-height: 70px !important;
     }
 }
 

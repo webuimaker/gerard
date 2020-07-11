@@ -30,7 +30,7 @@ catType: "Working Papers"
 
 # PDF attached
 
-{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="pdf dddd" >}}
+{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="pdf title" >}}
 
 
 # Tables

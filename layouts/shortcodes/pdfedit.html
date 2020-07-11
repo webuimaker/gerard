@@ -1,3 +1,7 @@
+<div class="text-center">
+
 <object data="{{ .Get "title" }}" type="application/pdf">
-    <iframe src="{{ .Get "src" }}"  width="100%" height="480"></iframe>
+    <iframe src="{{ .Get "src" }}"  {{if .Get "height" }} height="{{ .Get "height" }}" {{else}} height="480" {{end}}  {{if .Get "width" }} width="{{ .Get "width" }}" {{else}} width="480" {{end}} class="pdfedit"></iframe>
 </object>
+    
+</div>
