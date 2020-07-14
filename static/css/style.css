@@ -7,8 +7,8 @@ html{
 body{
     font-family: 'Catamaran', sans-serif !important; 
     font-size: 15px;
-    color: rgba(0,0,0,.8);
-    line-height: 1.5;
+    color: rgba(0,0,0,.8);  
+    line-height: 1.5 !important;
     background-color: #fff;
     margin-top: 70px !important;
     padding-top: 0;
@@ -38,6 +38,14 @@ a.active{ color: #2962ff;}
 ul{
     margin: 0px;
     padding: 0px;
+}
+
+.container {
+    width: 100% !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 .navbar-collapse.collapse {
     /* display: flex !important; */
@@ -81,6 +89,10 @@ ul{
 .navbar-nav li:last-child a{
    
     font-weight: 900;
+}
+.navbar-nav > li > a{    
+    line-height: 1.5 !important;
+
 }
 /* .navbar-nav li:last-child a:before{
     content: "";
@@ -455,6 +467,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-left: 0%;
         width: 100%;
     }
+
+    .pdfedit{
+        max-width: 100% !important;
+        height: auto !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -489,6 +506,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .big-image{
         margin-left: 0%;
         width: 100%;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: inherit !important;
+        padding-bottom:  inherit !important;
     }
 }
 @media (max-width: 768px) { 

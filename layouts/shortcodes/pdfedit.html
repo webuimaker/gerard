@@ -1,11 +1,13 @@
 <div class="text-center">
 
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~elizabethts/9.embed" height="525" width="100%"></iframe>
+
 <object data="{{ .Get "title" }}" type="application/pdf">
     <iframe src="{{ .Get "src" }}"  {{if .Get "height" }} height="{{ .Get "height" }}" {{else}} height="480" {{end}}  {{if .Get "width" }} width="{{ .Get "width" }}" {{else}} width="480" {{end}} class="pdfedit"></iframe>
 </object>
 
 
-<object type="application/pdf"
+<object type="application/pdf" class="pdfedit"
     data="{{ .Get "src" }}"
     width="100%"
     height="480">

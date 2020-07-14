@@ -1,7 +1,9 @@
 ---
 title: "Statistics"
 subTitle: "Spring 2021"
-id: teaching
+id: media
+permalinks: "https://www.google.com/"
+linkType: "external"
 sidebar: true
 date: 2020-06-10
 
