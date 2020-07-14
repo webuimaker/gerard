@@ -111,8 +111,8 @@ ul{
 }
 .portrait-title h3 {
     font-size: 1rem;
-    font-weight: 300;
-    color: rgba(0,0,0,.54);
+    font-weight: 400;
+    color: rgba(0,0,0,1);
     margin: 0 0 10px;
 }
 .courselist li{
@@ -436,7 +436,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (max-width: 576px) { 
     .about-content{
         padding-top: 10px;
-        border-top: 1px solid #ccc;
+        /* border-top: 1px solid #ccc; */
         margin-top: 10px;
     } 
     
