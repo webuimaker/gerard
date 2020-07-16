@@ -13,7 +13,7 @@
                     {{ $avatar_image := $avatar.Fill "200x200 Center" }}
                     <img class="portrait" src="{{ $avatar_image.RelPermalink }}" itemprop="image" alt="{{ $author }}">
 
-                    <div class="portrait-title text-center">
+                    <div class="portrait-title text-center mt-2">
                       <!-- <h2 itemprop="name">{{ $person.name }}</h2> -->
                       {{ with $person.role }}<h3 itemprop="jobTitle" class="mt-1">{{ . | safeHTML | emojify }}</h3>{{ end }}
                       <p><a href="{{ $person.cv}}">Download My CV</a></p> 
