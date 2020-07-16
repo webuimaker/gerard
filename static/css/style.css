@@ -7,8 +7,8 @@ html{
 body{
     font-family: 'Catamaran', sans-serif !important; 
     font-size: 15px;
-    color: rgba(0,0,0,.8);
-    line-height: 1.5;
+    color: rgba(0,0,0,.8);  
+    line-height: 1.5 !important;
     background-color: #fff;
     margin-top: 70px !important;
     padding-top: 0;
@@ -39,6 +39,14 @@ ul{
     margin: 0px;
     padding: 0px;
 }
+
+/*14July .container {
+    width: 100% !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+} */
 .navbar-collapse.collapse {
     /* display: flex !important; */
     padding: 0px !important;
@@ -82,6 +90,10 @@ ul{
    
     font-weight: 900;
 }
+/*14 JUly .navbar-nav > li > a{    
+    line-height: 1.5 !important;
+
+} */
 /* .navbar-nav li:last-child a:before{
     content: "";
     position: absolute;
@@ -111,8 +123,8 @@ ul{
 }
 .portrait-title h3 {
     font-size: 1rem;
-    font-weight: 300;
-    color: rgba(0,0,0,.54);
+    font-weight: bold;
+    color: rgba(0,0,0,1);
     margin: 0 0 10px;
 }
 .courselist li{
@@ -455,6 +467,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-left: 0%;
         width: 100%;
     }
+
+    .pdfedit{
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    .plotly{
+        max-width: 100% !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -472,7 +493,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-left: 0%;
         width: 100%;
     }
-
+    .plotly{
+        max-width: 100% !important;
+    }
 
 }
 
@@ -489,6 +512,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .big-image{
         margin-left: 0%;
         width: 100%;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: inherit !important;
+        padding-bottom:  inherit !important;
     }
 }
 @media (max-width: 768px) { 

@@ -2,6 +2,8 @@
 title: "Data Demo 1"
 subTitle: "Demography 2020 57: 123–145"
 id: media
+permalinks: "https://www.google.com/"
+linkType: "external"
 sidebar: true
 date: 2020-06-20T16:01:23+08:00
 

@@ -11,6 +11,9 @@
 
             <div class="col-lg-9 col-sm-12 mb-2">
                 <h1 class="title-page">{{ .Title }}</h1> 
+                {{if .Params.subTitle}}
+                    <p class="text-muted">{{.Params.subTitle}}</p> 
+                {{end}}
                 {{if  .Params.btn    }}
                     <div class="btn-links lg">
                         {{range .Params.btn }}  
@@ -20,9 +23,10 @@
                         {{ end }}
                     </div>
                 {{end}}
-                {{if .Date}}     
+                <!-- {{if .Date}}     
                     <span class="text-muted">{{.Date.Format "01, January, 2006 "}} </span>
-                {{end}}
+                {{end}} -->
+                
 
                 {{ .Content  | safeHTML }}
             </div>
