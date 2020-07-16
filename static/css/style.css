@@ -40,13 +40,13 @@ ul{
     padding: 0px;
 }
 
-.container {
+/*14July .container {
     width: 100% !important;
     padding-right: 15px !important;
     padding-left: 15px !important;
     margin-right: auto !important;
     margin-left: auto !important;
-}
+} */
 .navbar-collapse.collapse {
     /* display: flex !important; */
     padding: 0px !important;
@@ -90,10 +90,10 @@ ul{
    
     font-weight: 900;
 }
-.navbar-nav > li > a{    
+/*14 JUly .navbar-nav > li > a{    
     line-height: 1.5 !important;
 
-}
+} */
 /* .navbar-nav li:last-child a:before{
     content: "";
     position: absolute;
