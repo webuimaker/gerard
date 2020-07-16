@@ -436,7 +436,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (max-width: 576px) { 
     .about-content{
         padding-top: 10px;
-        border-top: 1px solid #ccc;
+        /* border-top: 1px solid #ccc; */
         margin-top: 10px;
     } 
     
