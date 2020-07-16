@@ -472,6 +472,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         max-width: 100% !important;
         height: auto !important;
     }
+    
+    .plotly{
+        max-width: 100% !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -489,7 +493,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-left: 0%;
         width: 100%;
     }
-
+    .plotly{
+        max-width: 100% !important;
+    }
 
 }
 
