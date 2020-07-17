@@ -470,9 +470,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .pdfedit{
         max-width: 100% !important;
-        height: auto !important;
+        height: 250px;
     }
-    
+    }
     .plotly{
         max-width: 100% !important;
     }
@@ -505,9 +505,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .fixed-top .navbar-collapse.collapse {
         /* display: flex !important; */
     }
-    .navbar-nav.navbar-pos{
+    /* .navbar-nav.navbar-pos{
         float: right;
-    }
+    } */
     
     .big-image{
         margin-left: 0%;
@@ -517,6 +517,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .navbar-nav>li>a {
         padding-top: inherit !important;
         padding-bottom:  inherit !important;
+    }
+    .navbar-nav.navbar-pos{
+        float: left;
+    }
+    .aside {
+        display: none;
     }
 }
 @media (max-width: 768px) { 
@@ -548,7 +554,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-left: -15%;
         width: 130%;
     }
-
+    .aside {
+        display: none;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

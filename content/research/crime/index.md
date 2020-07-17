@@ -31,7 +31,14 @@ catType: "Journal Articles"
 
 
 
-{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="Download pdf title" width="100%" >}}
+##  Google Drive PDF option
+
+
+{{< pdfedit src="https://drive.google.com/file/d/1g-eAZWGAtFZcHIZapJX5LTm432fx0OVc/preview" title="Downlaod My CV" height="600" width="100%" class="no-button">}}
+
+{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="Download pdf title" width="100%"  >}}
+
+
 
 
 

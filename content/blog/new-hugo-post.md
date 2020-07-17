@@ -25,12 +25,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 >Excepteur sint occaecat cupidatat non proident sunt culpa officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis.
 
-## Tweets
+## Google Drive PDF option
 
-{{< tweet 877500564405444608 >}}  
 
-`{{/< tweet 877500564405444608 >/}}`
-
+{{< pdfedit src="https://drive.google.com/file/d/1g-eAZWGAtFZcHIZapJX5LTm432fx0OVc/preview" title="Downlaod My CV" height="600" width="100%" >}}
 
 ## figure with Caption
 
