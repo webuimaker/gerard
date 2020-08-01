@@ -112,5 +112,7 @@ pygmentsStyle = "manni"
 
 
 [params.font]
-  name = "Poppins"
-  sizes = "600"
+  name = "Assistantm"
+  sizes = ["200", "400", "600"]
+
+  

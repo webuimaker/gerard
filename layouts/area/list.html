@@ -17,7 +17,14 @@
                     <ul class="catlist ">                    
                         {{ range .Data.Pages }}                            
                             <li>     
-                                    <a href="{{ .Permalink }}" >{{ .Title }}</a>
+                                    <!-- <a href="{{ .Permalink }}" >{{ .Title }}</a> -->
+
+                                    {{if or (eq .Params.linkType "external") (eq .Params.linkType "internal") }}
+                                            <a href="{{ .Params.Permalinks }}" target="_blank">{{.Title}}</a>
+                                        {{else}}
+                                            <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                                        {{end}}
+
                                     <div class="row">
                                         <div class="col-md-9">
 
