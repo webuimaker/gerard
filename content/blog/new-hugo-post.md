@@ -9,6 +9,7 @@ authorUrl: "https://gerardtorratsespinosa.com/"
 authorPost: "Assistant Professor of Sociology <br> Columbia University"
 type: post
 image: images/blog/hashtag_beach.jpg
+Plotly: true
 categories: 
   - "Investment"
   - "consultancy"
@@ -65,3 +66,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
 
     {{< html-window src="https://plot.ly/~elizabethts/9.embed" title="Html" height="525" width="100%" >}}
+
+
+## Plotly
+<div id="tester" style="width:600px;height:250px;"></div>
+
