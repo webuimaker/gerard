@@ -1,6 +1,6 @@
 {{- $inServerMode := .Site.IsServer }}
 {{- $fontFace     := replace .Site.Params.font.name " " "+" }}
-{{- $fontSizes    := delimit .Site.Params.font.sizes "," }}
+{{- $fontSizes    := delimit .Site.Params.font.sizes ";" }}
 {{- $fontDisplay  := "&display=swap" }}
 
 {{- $fontUrl      := printf "https://fonts.googleapis.com/css2?family=%s:wght@%s%s" $fontFace $fontSizes $fontDisplay }}

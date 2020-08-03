@@ -112,7 +112,7 @@ pygmentsStyle = "manni"
 
 
 [params.font]
-  name = "Assistantm"
-  sizes = ["200", "400", "600"]
+  name = "Mukta+Vaani"
+  sizes = ["200", "300", "400", "600"]
 
   
