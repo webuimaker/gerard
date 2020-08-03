@@ -28,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ## Google Drive PDF option
 
 
-{{< pdfedit src="https://drive.google.com/file/d/1g-eAZWGAtFZcHIZapJX5LTm432fx0OVc/preview" title="Downlaod My CV" height="600" width="100%" >}}
+{{< googlepdf src="https://drive.google.com/file/d/1g-eAZWGAtFZcHIZapJX5LTm432fx0OVc/preview" title="Downlaod My CV" height="600" width="100%" >}}
 
 ## figure with Caption
 
@@ -52,7 +52,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 
 {{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="pdf title" >}}
-{{< pdfedit src="/plotly.html" title="Html" >}}
+{{< html-window src="/plotly.html" title="Html" >}}
 
 {{< bgimage src="/images/blog/blog-4.jpg" title="Steve Francia" >}}
 

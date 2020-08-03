@@ -25,7 +25,7 @@
 {{if eq .Params.pageType  "r"}}
     <style>
         body{
-            font-family: 'Fira Code', monospace !important;
+            font-family: 'Mukta Vaani', sans-serif !important;
         }
         .tocify .list-group-item{
             font-size:15px;
@@ -37,3 +37,9 @@
         
     </style>
 {{end}}
+
+{{- if .Params.Plotly }}
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+{{- end }}

@@ -71,7 +71,7 @@ ul{
 .nav-item a{
     font-size: 17px;
     font-weight: bold;
-    font-family: 'Assistant', sans-serif !important;
+    /* font-family: 'Assistant', sans-serif !important; */
 }
 .nav-item.active a{
     color: #2962ff !important;
@@ -84,7 +84,7 @@ ul{
     margin-left: 0px !important;
     line-height: inherit !important; 
 }
-.navbar-nav li:last-child{
+.navbar-nav li:last-child a{
     position: relative;
     font-family: 'Special Elite', cursive !important;
     font-weight: bolder;
@@ -246,17 +246,17 @@ footer{
 } */
 
 .single-page h1{
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 500;
     margin-top: 0px;
 }
 
 .single-page h2{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 .single-page h3{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 .single-page h4{
@@ -268,7 +268,7 @@ footer{
     font-weight: 500;
 }
 .single-page h6{
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 .single-content ul {
@@ -365,7 +365,7 @@ footer{
 }
 .posfixed h2{
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 300;
 }
 .posfixed li a{
     font-size: 15px;
@@ -547,7 +547,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         display: none;
     }
     .navbar-light .navbar-brand{
-        font-size: 1em;
+        font-size: 1.3em;
     }
 }
 @media (max-width: 768px) { 
