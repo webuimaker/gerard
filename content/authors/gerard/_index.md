@@ -4,7 +4,7 @@ email: ""
 name: Gerard Torrats-Espinosa
 role: "Assistant Professor <br>  Department of Sociology <br> Columbia University"
 cv: "/cv"
-cvDownloadText: "Download CV"
+cvtext: "Download CV"
 courses:
 - course:
   institution: 
