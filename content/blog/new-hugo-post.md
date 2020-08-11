@@ -52,8 +52,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 
 
-{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="pdf title" >}}
-{{< html-window src="/plotly.html" title="Html" >}}
+{{< pdfedit src="/images/pdf/balcells-torrats-espinosa-2018-pnas-terrorism.pdf" title="pdf title" width="100%" >}}
+{{< html-window src="/plotly.html" title="Html" width="100%" >}}
 
 {{< bgimage src="/images/blog/blog-4.jpg" title="Steve Francia" >}}
 
@@ -65,9 +65,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
 
-    {{< html-window src="https://plot.ly/~elizabethts/9.embed" title="Html" height="525" width="100%" >}}
+{{< html-window src="https://plot.ly/~elizabethts/9.embed" title="Html"  width="100%" >}}
 
+## twitter code below 
+`{{\< tweet 877500564405444608 >\}}`
+{{< tweet 877500564405444608 >}}
 
 ## Plotly
-<div id="tester" style="width:600px;height:250px;"></div>
+<div id="tester" style="width:600px; height:250px;"></div>
 

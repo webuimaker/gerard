@@ -18,7 +18,6 @@ btn:
 catType: "Data Demo"
 ---
 
-# Data Demo 1
 
 This is a post written in plain Markdown (`*.md`) instead of R Markdown (`*.Rmd`). The major differences are:
 

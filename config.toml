@@ -112,7 +112,7 @@ pygmentsStyle = "manni"
 
 
 [params.font]
-  name = "Mukta+Vaani"
-  sizes = ["200", "300", "400", "600"]
+  name = "Source+Sans+Pro"
+  sizes = ["200", "300", "400", "600", "700", "900" ]
 
   

@@ -28,7 +28,7 @@ social:
   link: #
 ---
 
-## My Research
+#### My Research
 
 Welcome! I am a Postdoctoral Fellow at Columbia University’s Data Science Institute, and I will join the Sociology Department at Columbia University as an Assistant Professor in Fall 2020. My research draws from the literature on urban sociology, stratification, and criminology, and it focuses on understanding how the spatial  organization of the American stratification system creates and reproduces inequalities.
 

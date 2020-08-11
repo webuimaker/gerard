@@ -1,13 +1,13 @@
 {{ "<!-- blog single -->" | safeHTML }}
 <section>
         <div class="row">               
-            <div class="col-3 aside black d-none d-md-block">
+            <div class="col-2 aside black d-none d-md-block">
                 <div class="posfixed">
                     {{ .TableOfContents | truncate 65 }}
                 </div>
                 
             </div>
-            <div class="col-md-6 col-xs-12 single-content  mb-2">
+            <div class="col-md-8 col-xs-12 single-content  mb-2">
                 <div class="bg-white">
                     {{ if .Params.image }}
                         <img class="img-fluid w-100 rounded-top mb-3" src="{{ .Params.image | absURL }}" alt="blog-image">
