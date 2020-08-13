@@ -22,10 +22,10 @@
 
             
             <div class="{{if .Params.sidebar}} col-9 {{else}} col-12 {{end}} mb-2">
-                {{if  .Params.pageType}}
+                {{if  .Params.pageType }}
                     <div class="row">
-                        <h1>{{.Title }}</h1>                              
-                        <span class="text-muted">{{.Date.Format "01, January, 2006 "}} </span>
+                        <!-- <h1>{{.Title }}</h1>                              
+                        <span class="text-muted">{{.Date.Format "01, January, 2006 "}} </span> -->
                         {{ .Content  | safeHTML }}
                     </div>
                 {{else}}

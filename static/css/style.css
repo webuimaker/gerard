@@ -73,7 +73,7 @@ ul{
 }
 .nav-item a{
     font-size: 17px;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* font-family: 'Assistant', sans-serif !important; */
 }
 .nav-item.active a{
@@ -90,13 +90,13 @@ ul{
 }
 .navbar-nav li:last-child a{
     position: relative;
-    
+/*     
     font-family: 'Mukta Vaani', sans-serif;
-    font-weight: bolder;
+    font-weight: bolder; */
 }
 .navbar-nav li:last-child a{
-   
-    font-weight: 900;
+/*    
+    font-weight: 900; */
 }
 /*14 JUly .navbar-nav > li > a{    
     line-height: 1.5 !important;
@@ -356,6 +356,12 @@ footer{
 .about-content h2{
     margin-top: 0px;
 }
+
+
+.about-content h4{
+    margin-top: 3px;
+}
+
 
 .aside.black .list-unstyled li a, .aside.black #TableOfContents ul li a, .black  li a{
     color: #000;
